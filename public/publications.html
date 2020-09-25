@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>PBI</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container" id="topArea">
+      <a id="logo-container" href="#" class="brand-logo">
+        <img src="./images/logo2.png" style="width: 40px; height: 50px; padding-top: 10px;" >
+        <!-- todo CW fix this behavior and likely resize image ^^ -->
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <!-- <li><a href="#">Navbar Link</a></li> -->
+        <li><a href="../index.html#topArea" > Home</a></li>
+        <li><a href="../index.html#aboutArea" > About</a></li>
+        <li><a href="../index.html#contactArea" > Contact</a></li>
+        <li><a href="./publications.html" >Publications</a></li>
+          <!-- <a href="#contactArea" class="noStyle"><li>Contact</li></a>
+          <a href="#aboutArea" class="noStyle"><li>About</li></a> -->
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="../index.html#topArea" > Home</a></li>
+        <li><a href="../index.html#aboutArea" > About</a></li>
+        <li><a href="../index.html#contactArea" > Contact</a></li>
+        <li><a href="./publications.html" >Publications</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h3 class="header center black-text text-lighten-2">Publications</h3>
+      </div>
+    </div>
+    <!-- <div class="parallax"><img src="images/lab-plants-resize.jpeg" alt="Unsplashed background img 1"></div> -->
+
+
+  <div class="container" id="pubArea">
+    <div class="section">
+
+      <!--   Pubs Section   -->
+          <!-- Modal Trigger -->
+    
+        <div class="row pubRow">
+        <div class="col s12 m6">
+            <div class ="pubImage center-align">
+            <img class="center-align" src="./images/pbi.2015.13.issue-8.cover.jpg" />   
+            </div> 
+        </div>
+
+        <div class="col s12 m6">
+            <h5 class="light center-align">Anti‐infective immunoadhesins from plants</h5>
+            <p class="light center-align">Plants offer a highly attractive system for the large‐scale, economical production of vaccines, antibodies and other therapeutic proteins. </p>
+            <div class="center-align clickableImage "> <a class="modal-trigger " href="#modal1" ><img src="./images/figure1.png" style="max-width: 30%;"/></a></div>
+            <br>
+           <div class="center-align"><h6><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/pbi.12441" target="_blank">Click For Full Article</a></h6></div>
+          </div>
+      </div>
+    
+
+      <div class="row pubRow">
+        <div class="col s12 m6">
+            <div class ="pubImage center-align">
+                <img class="center-align" src="./images/pbi.2015.13.issue-8.cover.jpg" />   
+                </div>           
+        </div>
+
+        <div class="col s12 m6">
+            <p class="light center-align">Publication 2</p>
+          </div>
+
+
+      </div>
+
+      <div class="row pubRow">
+        <div class="col s12 m6">
+            <div class ="pubImage center-align">
+                <img class="center-align" src="./images/pbi.2015.13.issue-8.cover.jpg" />   
+                </div>          
+        </div>
+
+        <div class="col s12 m6">
+            <p class="light center-align">Publication 1</p>
+          </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal" >
+      <div class="modal-content" >
+        <div class="center-align"><img class="pubModalImage" src="./images/figure1.png"/></div>
+       
+      </div>
+    </div>
+
+  <footer class="page-footer teal">
+    <!-- <div class="container" id="contactArea">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Please Reach Out</h5>
+          <p class="grey-text text-lighten-4">We welcome any inquiries, including requests for more information, employment or investment opportunities at Planet Biotechnology or comments about our website.
+          </p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Location</h5>
+          Planet Biotechnology Inc.
+          20980 Corsair Blvd.
+          Hayward, California 94545
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.linkedin.com/company/planet-biotechnology-inc./"><img src="./images/LI-Logo.png" height="25px" width="110px"></a></li>
+            <br>
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+    <div class="footer-copyright">
+      <div class="container">
+        <p>&copy; PBI 1998-<span id="date"></span></p>
+        <script>
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            console.log(y,m,d);
+            console.log(n.toString())
+            document.getElementById("date").innerHTML = y;
+        </script>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/nav.js"></script>
+
+  </body>
+</html>
