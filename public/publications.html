@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+  <script src="js/scrollreveal.min.js"></script>
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -54,7 +56,7 @@
 
       <!--   Pubs Section   -->
         <!--  -->
-          <div class="row pubRow">
+          <div class="row pubRow first">
             <div class="col s12 m6">
                 <div class ="pubImage center-align">
                 <!-- <img class="center-align" src="./images/pbi.2015.13.issue-8.cover.jpg" /> -->
@@ -73,8 +75,8 @@
               </div>
           </div>
           <!--  -->
-    
-        <div class="row pubRow">
+        
+        <div class="row pubRow second">
         <div class="col s12 m6">
             <div class ="pubImage center-align">
             <!-- <img class="center-align" src="./images/pbi.2015.13.issue-8.cover.jpg" /> -->
@@ -82,6 +84,9 @@
             <div class="center-align"><h6><a  class ="linkEffect" href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/pbi.12441" target="_blank">PDF HERE</a></h6></div>
             </div> 
         </div>
+        <script>
+          ScrollReveal({}).reveal('.second');
+        </script>
 
         <div class="col s12 m6">
           <!-- <h4 class="center-align">October 2015</h4>
@@ -177,6 +182,7 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/nav.js"></script>
+  
 
   </body>
 </html>
