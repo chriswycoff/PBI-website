@@ -11,31 +11,33 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container" id="topArea">
-      <a id="logo-container" href="./index.html" class="brand-logo">
-        <img src="./images/logo2.png" style="width: 40px; height: 50px; padding-top: 10px;" >
-        <!-- todo CW fix this behavior and likely resize image ^^ -->
-      </a>
-      <ul class="right hide-on-med-and-down">
-        <!-- <li><a href="#">Navbar Link</a></li> -->
-        <li><a href="#" > Home</a></li>
-        <li><a href="#aboutArea" > About</a></li>
-        <li><a href="#contactArea" > Contact</a></li>
-        <li><a href="./publications.html" >Publications</a></li>
-          <!-- <a href="#contactArea" class="noStyle"><li>Contact</li></a>
-          <a href="#aboutArea" class="noStyle"><li>About</li></a> -->
-      </ul>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container" id="topArea">
+        <a id="logo-container" href="./index.html" class="brand-logo">
+          <img src="./images/logo2.png" style="width: 40px; height: 50px; padding-top: 10px;" >
+          <!-- todo CW fix this behavior and likely resize image ^^ -->
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <!-- <li><a href="#">Navbar Link</a></li> -->
+          <li><a href="#" > Home</a></li>
+          <li><a href="#aboutArea" > About</a></li>
+          <li><a href="#contactArea" > Contact</a></li>
+          <li><a href="./publications.html" >Publications</a></li>
+            <!-- <a href="#contactArea" class="noStyle"><li>Contact</li></a>
+            <a href="#aboutArea" class="noStyle"><li>About</li></a> -->
+        </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#topArea" > Home</a></li>
-        <li><a href="#aboutArea" > About</a></li>
-        <li><a href="#contactArea" > Contact</a></li>
-        <li><a href="./publications.html" >Publications</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#topArea" > Home</a></li>
+          <li><a href="#aboutArea" > About</a></li>
+          <li><a href="#contactArea" > Contact</a></li>
+          <li><a href="./publications.html" >Publications</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot" style="padding-top: 80px;">
@@ -95,7 +97,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 black-text">Planet is dedicated to solving significant biotechnology challenges </h5>
+          <h5 class="header col s12 black-text ">Planet is dedicated to solving significant biotechnology challenges </h5>
         </div>
       </div>
     </div>
@@ -170,6 +172,9 @@
           <h5 class="white-text">Connect</h5>
           <ul>
             <li><a class="white-text" href="https://www.linkedin.com/company/planet-biotechnology-inc./"><img src="./images/LI-Logo.png" height="25px" width="110px"></a></li>
+            <br>
+
+            <li><a class="noStyle" href="tel:510-887-1461">(510) 887-1461</a></li>
             <br>
             <li><a href="mailto:info@planetbiotechnology.com" class= "noStyle" >info@planetbiotechnology.com</a></li>
             <!-- <li><a class="white-text" href="#!">Link 3</a></li>
